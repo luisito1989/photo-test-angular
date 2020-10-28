@@ -1,0 +1,10 @@
+<div class="row body-padding">
+    <div class="col-lg-4 col-md-6 p-2" *ngFor ="let photo of Photos">
+        <div class="card">
+            <img [src]="photo.url" class="img-card-top w-100">
+            <div class="card-body">
+                {{photo.title}}
+            </div>
+        </div>
+    </div>
+</div>

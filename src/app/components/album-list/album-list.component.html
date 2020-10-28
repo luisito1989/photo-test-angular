@@ -1,0 +1,10 @@
+<div class="row body-padding">
+    <div class="col-md-4 p-2" *ngFor ="let album of Albums">
+        <div class="card select" (click)="showPhotos(album.id)">
+          <div class="card-body">
+            <h5 class="card-title">ID {{album.id}}</h5>
+            <p class="card-text">{{album.title}}</p>
+          </div>
+        </div>
+    </div>
+</div>

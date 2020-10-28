@@ -1,0 +1,12 @@
+.select {
+    min-height: 20vh;
+}
+
+.select:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 4px #999;
+}
+
+.body-padding{
+    margin-top: 70px;
+}

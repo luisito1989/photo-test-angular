@@ -1,0 +1,19 @@
+<div class="row d-flex justify-content-center body-padding">
+
+    <div id="accordion" style="width: 70vw;">
+        <div class="card mb-2" *ngFor="let post of Posts">
+          <div class="card-header">
+            <a class="card-title" data-toggle="collapse" [href]="'#collapse'+post.id">
+              {{post.title}}
+            </a>
+          </div>
+          <div [id]="'collapse'+post.id" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              {{post.body}}
+            </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+
